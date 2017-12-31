@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Dice Game</title>
+    </head>
+
+    <body>
+        <div class="container clearfix">
+            <div class="panel-1 active">
+                <div class="player"><i class="fa fa-users" aria-hidden="true"></i>Player1</div>
+				        <img src="Trophy.png" class="winner1">
+                <div class="score" id="player1-current-score">0</div>
+                <div class="box">
+                    <div class="label">Score</div>
+                    <div class="totalScore" id="player1-total-score">0</div>
+                </div>
+            </div>
+
+            <div class="panel-2">
+                <div class="player"><i class="fa fa-users" aria-hidden="true"></i>Player2</div>
+				        <img src="Trophy.png" class="winner2">
+                <div class="score" id="player2-current-score">0</div>
+                <div class="box">
+                    <div class="label">Score</div>
+                    <div class="totalScore" id="player2-total-score">0</div>
+                </div>
+            </div>
+
+            <button class="newGame"><b>Reset game</b></button>
+            <button class="roll">Shake dice</button>
+
+            <img src="dice1.png" class="dice">
+        </div>
+
+        <script src="game.js"></script>
+    </body>
+</html>

@@ -1,0 +1,222 @@
+/*
+
+	自定义CSS
+
+*/
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background-image: linear-gradient(rgba(70, 25, 25, 0.3), rgba(70, 25, 25, 0.3)), url(BG.jpg);
+    background-size: cover;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color:#003153;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+}
+
+.container {
+
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 50px 200px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+	border-radius: 50%;
+
+}
+
+.panel-1,
+.panel-2 {
+
+    width: 50%;
+    float: left;
+    height: 590px;
+    padding: 100px;
+
+}
+
+.winner1 {
+
+	top: -65px;
+	position: relative;
+	width: 55px;
+    z-index: 1;
+    color:#003153;
+
+}
+
+.winner2 {
+
+	top: -65px;
+	position: relative;
+	width: 55px;
+    z-index: 1;
+    color:#003153;
+
+}
+
+.player {
+
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    position: relative;
+    color:#003153;
+
+}
+
+.score {
+
+	   margin-top: 55px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #003153;
+    margin-bottom: 80px;
+
+}
+
+.active {
+
+ 	background-color: #F0E68C;
+
+ }
+.active .player {
+
+ 	font-weight: 300;
+
+ }
+
+.active .player::after {
+
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #003153;
+    top: -7px;
+    right: 10px;
+
+}
+
+.box {
+
+    background-color: #003153;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    border-radius: 60%;
+     border: 5px solid #4798B3;
+
+
+}
+
+.label {
+
+    font-size: 18px;
+
+}
+
+.totalScore {
+
+    font-size: 35px;
+
+}
+
+button {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+button:hover {
+
+ 	font-weight: 400;
+
+ }
+
+button:hover i {
+
+ 	margin-right: 20px;
+
+}
+
+button:focus {
+
+    outline: none;
+
+}
+
+i {
+
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+
+}
+
+.newGame {
+
+ 	top: 55px;
+     font-size: 30px;
+     color: #003153;
+     
+
+ }
+
+.roll {
+
+ 	top: 430px;
+     font-size: 30px;
+     color: #003153;
+
+ }
+
+.dice {
+
+    position: absolute;
+    left: 50%;
+    top: 235px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+
+}
+
+.fa-users{
+    color:#003153;;
+}
